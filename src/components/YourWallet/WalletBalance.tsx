@@ -10,7 +10,8 @@ export const WalletBalance = ({candidate}: WalletBalanceProps) => {
     // const {account} = useEthers()
     // const tokenBalance =useTokenBalance(address,account)
     // const formattedTokenBalance: number= tokenBalance ? parseFloat(formatUnits(tokenBalance,18)):0
-    return(<div>
+    return (<div style={{
+    }}>
         <h1>{name}</h1>
         <img style={{height:"400px",width:"auto"}} src={image} alt={`${name}`}/>
     </div>) 
