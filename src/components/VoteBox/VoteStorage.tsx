@@ -7,7 +7,7 @@ export interface VoteStorageProps {
   candidate: Candidate;
 }
 
-// vatestate === 'mining'
+// votestate === 'mining'
 export const VoteStorage = ({ candidate }: VoteStorageProps) => {
   const { account } = useEthers();
   const { image, index, name } = candidate;
@@ -25,8 +25,6 @@ export const VoteStorage = ({ candidate }: VoteStorageProps) => {
     setButtonState(true);
     setButtonClicked("result");
     // console.log(isChairperson())
-    // const amountAsWei= utils.parseEther(amount.toString())
-    // return approveAndStake(amountAsWei.toString())
   };
   const [buttonClicked, setButtonClicked] = useState("");
   const [opendiv, setOpenDiv] = useState(false);
