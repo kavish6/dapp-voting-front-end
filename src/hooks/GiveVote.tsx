@@ -37,7 +37,7 @@ export const GiveVote = (index: number) => {
     winnerSend();
   };
   const showWinner = () => {
-    return Winner;
+    return Winner;  
   };
   const [Chairperson] =
     useContractCall({
